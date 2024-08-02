@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio Website Design</title>
+    <title>Mike Medrano</title>
     <link rel="stylesheet" href="style.css">
     <!----Font awesome cdn  font icon css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -15,7 +15,7 @@
             <header>
                 <div class="logo">
                     <i class="fa-solid fa-m"></i>
-                    <div class="logo-text">Michael Medrano</div>
+                    <div class="logo-text">Mike Medrano</div>
                 </div>
                 <nav>
                     <div class="togglebtn">
@@ -24,10 +24,9 @@
                         <span></span>
                     </div>
                     <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="files/mrmedrano_resume.pdf">Resume</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
@@ -37,7 +36,7 @@
                     <img src="images/main_photo.jpg" alt="profile pic">
                  </div>
                  <div class="hero-text">
-                    <h5>Hi! I'm a <span class="input">Computer Engineer</span></h5>
+                    <h5>Hi! I'm a <span class="input"></span></h5>
                     <h1>Mike Medrano</h1>
                     <p> I'm a computer engineering graduate from UP diliman, currently living in the US. 
                         I love designing and building software projects ranging from deep 
@@ -45,8 +44,7 @@
                     </p>
 
                     <div class="btn-group">
-                       <a href="#" class="btn active">Download CV</a>
-                       <a href="#" class="btn">Contact</a>
+                       <a href="files/mrmedrano_resume.pdf" class="btn active">Resume</a>
                     </div>
 
                     <div class="social">
@@ -71,8 +69,8 @@
         })
 
         var typed=new Typed(".input",{
-            strings:["Computer Engineer", "AI Developer", "Game Programmer","Game Developer"],
-            typedSpeed:70,
+            strings:["Software Developer", "Game Programmer","Game Developer"],
+            typedSpeed:55,
             backSpeed:55,
             loop:true
         })

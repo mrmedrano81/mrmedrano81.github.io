@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mike Medrano</title>
+    <link rel="stylesheet" href="portfolioStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="portfolio-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-m"></i>
+                    <div class="logo-text">Mike Medrano</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="files/mrmedrano_resume.pdf">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="portfolio-container">
+                <h1>Portfolio</h1>
+                <p></p>
+                
+                <div class="portfolio-items">
+                    <!-- Example Project 1 -->
+                    <div class="portfolio-item">
+                        <img src="images/tinymlopspipeline.png" alt="Project 1">
+                        <h3>Undergraduate Works</h3>
+                        <p>Some of the projects I'd worked on during my 
+                           BS computer engineering program in
+                           the University of the Philippines Diliman.</p>
+                        <a href="#" class="btn">View Projects</a>
+                    </div>
+                    
+                    <!-- Example Project 2 -->
+                    <div class="portfolio-item">
+                        <img src="images/gridguardians.png" alt="Project 2">
+                        <h3>Spiral Forge</h3>
+                        <p>A collection of video game projects under the indie 
+                           game studio Spiral Forge.
+                        </p>
+                        <a href="https://mrmedrano81.itch.io/" class="btn">View Games</a>
+                    </div>
+                    
+                    <!-- Example Project 3 -->
+                    <div class="portfolio-item">
+                        <!--<img src="images/project3.jpg" alt="Project 3"> -->
+                        <h3>Personal Projects</h3>
+                        <p>A small body of work reflecting my interests in the
+                            realm of computer engineering.
+                        </p>
+                        <a href="#" class="btn">Check them out!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
