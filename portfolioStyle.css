@@ -1,8 +1,9 @@
+/* General Reset and Styling */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Poppins, sans-serif;
+    font-family: FreeMono, monospace;
     text-decoration: none;
 }
 
@@ -10,6 +11,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Portfolio Header and Wrapper */
 .portfolio-header {
     width: 100%;
     height: 100%;
@@ -32,6 +34,7 @@ header {
     flex-wrap: wrap;
 }
 
+/* Logo */
 .logo {
     display: inline-flex;
     justify-content: center;
@@ -58,6 +61,7 @@ header {
     color: #fff;
 }
 
+/* Navigation */
 nav .togglebtn {
     width: 35px;
     height: 35px;
@@ -92,6 +96,22 @@ nav .navlinks li a {
     margin-right: 2.5rem;
 }
 
+h2 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 2rem;
+    color:#007ced
+}
+
+section {
+    padding-bottom: 40px;
+}
+
+footer {
+    background-color: #333;
+}
+
+/* Portfolio Container */
 .portfolio-container {
     padding-top: 4rem;
     text-align: center;
@@ -108,10 +128,11 @@ nav .navlinks li a {
     margin-bottom: 2rem;
 }
 
+/* Portfolio Items */
 .portfolio-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
 }
 
@@ -119,7 +140,7 @@ nav .navlinks li a {
     background: #333;
     border-radius: 5px;
     overflow: hidden;
-    width: 300px;
+    width: 320px;
     box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
 }
@@ -140,27 +161,47 @@ nav .navlinks li a {
     font-size: 1.2rem;
 }
 
+
+/* Paragraph Styling */
 .portfolio-item p {
     color: #e5e5e5;
-    padding: 0 10px 10px;
-    font-size: 0.9rem;
+    padding: 0 10px 0;
+    font-size: 0.8rem;
+    text-align: left;
 }
 
+/* Bullet List Styling */
+.portfolio-item ul {
+    padding-left: 20px; /* Indent bullets */
+    margin-bottom: 10px; /* Space below lists */
+    color: #e5e5e5;
+    text-align: left;
+}
+
+.portfolio-item ul li {
+    margin-bottom: 5px; /* Space between list items */
+    font-size: 0.8rem;
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Button */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 10px 10px;
+    margin: 7px;
     background: #007ced;
     color: #fff;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 15px;
     transition: background 0.3s ease;
+    font-size: 0.8rem;
 }
 
 .btn:hover {
-    background: #0056b3;
+    background: #084689;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 930px) {
     nav .togglebtn {
         display: initial;

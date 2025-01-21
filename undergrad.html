@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Computer Engineering student from UP Diliman showcasing projects in software development, computer systems, and more.">
+    <meta name="keywords" content="Computer Engineering, Portfolio, Software Development, GitHub, UP Diliman">
+    <title>Portfolio - Computer Engineering Works</title>
+    <link rel="stylesheet" href="portfolioStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="portfolio-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-cogs"></i>
+                    <div class="logo-text">My Portfolio</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="resume.pdf">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="portfolio-container">
+                <h1>Undergraduate Works</h1>
+                <p>A collection of projects and coursework from my BS Computer Engineering program in UP Diliman.</p>
+                <!-- Coursework Section -->
+                <section id="projects">
+                    <h2>PROJECTS</h2>
+                    <div class="portfolio-items">
+                        <!-- Coursework 1 -->
+                        <div class="portfolio-item">
+                            <img src="images/199.png">
+                            <h3>TinyMLOps Pipeline</h3>
+                            <p>For my capstone project, I developed a TinyMLOps Pipeline with the purpose of
+                                making tinyML application development and deployment easier.</p>
+                            <ul>
+                                <li>Languages used: <b>C</b>, <b>C++</b>, and <b>Python3</b>.</li>
+                                <li>Tools: <b>CMake</b>, <b>Make</b>, and <b>Docker</b>.</li>
+                                <li>Deep Learning Framework: <b>Tensorflow Lite Micro</b>.</li>
+                                <li>MCU Hardware: <b>STM32F746G</b>.</li>
+                            </ul>    
+                            <a href="https://github.com/mrmedrano81/tinymlops-pipeline-196-199/tree/main" class="btn">View Project on GitHub</a>
+                            <p></p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Projects Section -->
+                <section id="coursework">
+                    <h2>COURSEWORK</h2>
+                    <div class="portfolio-items">
+                        <!-- Coursework 1 -->
+                        <div class="portfolio-item">
+                            <img src="images/197S.png">
+                            <h3>Advanced Software Concepts</h3>
+                            <p>Tackled in-depth knowledge and practical experience in developing industry-grade software applications.</p>
+                            <ul>
+                                <li>Developed <b>object-oriented</b> applications and <b>RESTful</b> web services</li>
+                                <li>Applied software <b>design principles</b> and diverse software architectures</li>
+                                <li>Used tools such as <b>Trello, Git, Maven, IntelliJ, Spring Boot, Docker, and Swagger</b></li>
+                            </ul>
+                            <!-- <a href="https://github.com/CoE-197S-2s2021" class="btn">View on GitHub</a> -->
+                        </div>
+                        <!-- Coursework 3 -->
+                        <div class="portfolio-item">
+                            <img src="images/197Z.png">
+                            <h3>Deep Learning</h3>
+                            <p>Learned essential Deep Leaning concepts including MLPs, CNNs, RNNs,
+                                and Transformers. The course combined theory with hands-on coding 
+                                projects.
+                            </p>
+                            <ul>
+                                <li>Built a Word Sense Disambiguation webapp on <b>Hugging Face</b> using <b>Python3</b>, <b>PyTorch</b>, and <b>Gradio</b>.</li>
+                                <li>Trained and evaluated a CNN model for Object Detection using <b>Python3</b>, <b>PyTorch</b>, and <b>OpenCV</b>.</li>
+                                <li>Deveoped a transformer based Keyword Spotting model using <b>Python3</b> and <b>PyTorch</b>.</li>
+                            </ul>
+                            <a href="https://huggingface.co/spaces/Belligerent/word-sense-disambiguation" class="btn">View on HuggingFace</a>
+                            <a href="https://github.com/mrmedrano81/197z-object-detection" class="btn">View on Github</a>
+                            <p></p>
+                        </div>
+                        <!-- Coursework 2 -->
+                        <div class="portfolio-item">
+                            <img src="images/161.png">
+                            <h3>Introduction to Information and Complexity</h3>
+                            <p>Took an advanced course that explored core concepts like Shannon's Information Theory, Turing Machines, and Kolmogorov Complexity.
+                                Built <b>Python3</b> scripts for the following:
+                            </p>
+                            <ul>
+                                <li>Entropy, Source Coding, Channel Coding, Polar Codes</li>
+                                <li>Time/Space Complexity, Computability, and Algorithmic Entropy</li>
+                                <li>Advanced topics: Data-Processing Inequalities, AEP, and Rate-Distortion Theory</li>
+                            </ul>
+                            <a href="https://github.com/mrmedrano81/CoE-161" class="btn">View on Github</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Michael Medrano. All rights reserved.</p>
+        <a href="michael.ranola.medrano@gmail.com">Email me</a>
+    </footer>
+
+    <!-- Script for Toggle Button -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        if (togglebtn && nav) {
+            togglebtn.addEventListener("click", function() {
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            });
+        }
+    </script>
+</body>
+</html>
