@@ -14,6 +14,7 @@ body{
     min-height: 100vh;
     background: #222;
 }
+
 .wrapper{
     width:1280px;
     max-width: 95%;
@@ -49,6 +50,7 @@ header{
 .logo .logo-text{
     font-size: 24px;
     font-weight: 500;
+    margin-left: 0.7rem;
     color:#fff;
 }
 nav .togglebtn{
@@ -81,6 +83,12 @@ nav .navlinks li a{
      color:#e5e5e5;
      margin-right: 2.5rem;
 }
+
+nav .navlinks li a:hover{
+    color:#007ced;
+    margin-right: 2.5rem;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -137,20 +145,93 @@ nav .navlinks li a{
     border-radius: 30px;
     border:2px solid #e5e5e5;
     box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
+.btn-group .btn.active {
+    background-color: #333; /* Active button color */
+}
+
+.btn-group .btn:hover {
+    background-color: #686868af; /* Change background color on hover */
+    transform: scale(2); /* Slightly enlarge the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for emphasis */
+}
+
 .btn.active{
     border-color: #007ced;
 }
+
 .hero-text .social i{
     color: #e5e5e5;
     font-size: 18px;
-    margin-right: 10px;
+    margin-right: 0px;
     transition: 0.5s;
 }
+
 .hero-text .social i:hover{
     color:#007ced;
     transform: rotate(360deg);
 }
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+    font-size: 0.9rem; /* Adjust text size */
+    color: #2c3e50; /* Default text color */
+}
+
+.contact-info a {
+    text-decoration: none; /* Remove underline */
+    margin-right: 10px;
+    color: #ffffff; /* Default link color */
+}
+
+.contact-info a:hover {
+    color: #007ced; /* Hover color for links */
+}
+
+
+.social-icon {
+    font-size: 0.9rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between the icon and text */
+}
+
+.contact-item i {
+    font-size: 18px; /* Icon size */
+    color: #0077b5;
+    transition: transform 0.3s ease; /* Smooth rotation effect */
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact-item a:hover {
+    color: #007ced;
+}
+
+.contact-item a:hover + i, /* Ensure no unintended icon rotates */
+.contact-item:hover i { 
+    color: #007ced; /* Hover color for links */
+    transform: rotate(360deg); /* Full rotation on hover */
+}
+
+
 /* Respnosiv design & displaying navbar for small screen */
 @media(max-width:930px)
 {

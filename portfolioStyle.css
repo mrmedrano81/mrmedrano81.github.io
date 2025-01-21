@@ -96,6 +96,11 @@ nav .navlinks li a {
     margin-right: 2.5rem;
 }
 
+nav .navlinks li a:hover{
+    color:#007ced;
+    margin-right: 2.5rem;
+}
+
 h2 {
     padding-bottom: 15px;
     padding-top: 15px;
@@ -189,6 +194,8 @@ footer {
     display: inline-block;
     padding: 10px 10px;
     margin: 7px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background: #007ced;
     color: #fff;
     text-decoration: none;
@@ -199,6 +206,13 @@ footer {
 
 .btn:hover {
     background: #084689;
+}
+
+.inline-text {
+    color: #007ced;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 /* Responsive Adjustments */
